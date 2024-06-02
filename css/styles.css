@@ -22,6 +22,8 @@
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
+  --bs-custom-black: #213BA3;
+  --bs-custom-black-rgb: 33, 59, 163;
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
@@ -35,6 +37,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #0d6efd;
+  --bs-primary-custom: #47A2F5;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -43,6 +46,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 13, 110, 253;
+  --bs-primary-custom-rgb: 71, 162, 245;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -8129,6 +8133,11 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-primary-custom {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-primary-custom-rgb), var(--bs-bg-opacity)) !important;
+}
+
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
@@ -8167,6 +8176,11 @@ textarea.form-control-lg {
 .bg-black {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-green-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-custom-black-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-white {
